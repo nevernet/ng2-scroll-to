@@ -1,4 +1,4 @@
-export {ScrollTo} from './src/scrollTo';
+export { ScrollTo } from './src/scrollTo';
 
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -13,20 +13,20 @@ import { ScrollTo } from './src/scrollTo';
 export * from './src/scrollTo';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [
-   ScrollTo,
-  ],
-  exports: [
-   ScrollTo,
-  ]
+    imports: [
+        CommonModule
+    ],
+    declarations: [
+        ScrollTo,
+    ],
+    exports: [
+        ScrollTo,
+    ]
 })
 export class ScrollToModule {
-  static forRoot(): ModuleWithProviders {
-    return {
-      ngModule: ScrollToModule
-    };
-  }
+    static forRoot(): ModuleWithProviders {
+        return {
+            ngModule: ScrollToModule
+        };
+    }
 }

@@ -1,25 +1,29 @@
 {
-  "compilerOptions": {
-    "noImplicitAny": true,
-    "module": "commonjs",
-    "target": "ES5",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowUnusedLabels": false,
-    "noImplicitReturns": true,
-    "sourceMap": true,
-    "declaration": true,
-    "typeRoots": [
-      "node_modules/@types"
-    ]
-  },
-  "exclude": [
-    "node_modules",
-    "dist",
-    "**/*.spec.ts"
-  ],
-  "angularCompilerOptions": {
-    "strictMetadataEmit": true,
-    "genDir": "compiled"
-  }
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "ES5",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowUnusedLabels": false,
+        "noImplicitReturns": true,
+        "sourceMap": true,
+        "declaration": true,
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "lib": [
+            "es2017",
+            "dom"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        "dist",
+        "**/*.spec.ts"
+    ],
+    "angularCompilerOptions": {
+        "strictMetadataEmit": true,
+        "genDir": "compiled"
+    }
 }
